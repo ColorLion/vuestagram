@@ -125,7 +125,7 @@
         <v-col cols="12" sm="7">
           <v-card color="#23262D">
             <v-app-bar color="rgba(0,0,0,0)" flat>
-              <v-toolbar-title class="grey--text title">이달의 챔피언</v-toolbar-title>
+              <v-toolbar-title class="grey--text title">이달의 참피온</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-text-field
                 v-model="search"
@@ -140,7 +140,7 @@
                 </v-icon>
               </v-chip>
             </v-app-bar>
-            <v-data-table :headers="headers" :items="desserts" :search="search" class="dattab">
+            <v-data-table :headers="headers" :items="desserts" :search="search" class="dattab" hide-default-footer>
               <template v-slot:item.glutenfree="{ item }">
                 <v-simple-checkbox v-model="item.glutenfree" color="cyan"></v-simple-checkbox>
               </template>
@@ -156,11 +156,9 @@
         <v-col cols="12" sm="5">
           <v-card color="#23262D">
             <v-app-bar color="rgba(0,0,0,0)" flat>
-              <v-toolbar-title class="grey--text title">
-                Support ticket
-              </v-toolbar-title>
+              <v-toolbar-title class="grey--text title">이달의 위인</v-toolbar-title>
             </v-app-bar>
-            <v-list three-line class="mt-n5" color="#23262D">
+            <v-list three-line class="mt-n5" color="#1E1E1E">
               <v-list-item-group>
                 <template v-for="(item) in files">
                   <v-list-item :key="item.title">
@@ -190,6 +188,7 @@
 <script>
 export default{
   name: 'Home',
+
   data() {
     return {
       search: '',

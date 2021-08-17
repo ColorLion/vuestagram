@@ -30,8 +30,8 @@
             </v-list-item-group>
             <v-list-item-group v-model="selectedItem" color="cyan">
                 <v-list-item v-for="(item, i) in items" :key="i">
-                    <v-list-item-content align="center">
-                        <v-icon v-text="item.icon" class="mb-3" align="center" @click="$router.push(item.link)"></v-icon>
+                    <v-list-item-content align="center" @click="$router.push(item.link)">
+                        <v-icon v-text="item.icon" class="mb-3" align="center"></v-icon>
                         <v-list-item-subtitle v-text="item.text" align="center" class="caption"></v-list-item-subtitle>
                     </v-list-item-content>
                 </v-list-item>

@@ -1,10 +1,10 @@
 <template>
 <nav>
     <v-app-bar color="#23252D" dark app class="line" hight="90px">
-        <v-chip class="ma-2" color="grey darken-1" pill href="/">Dashboard
+        <v-chip class="ma-2" color="grey darken-1" pill>Dashboard
             <v-icon right small color="cyan">fas fa-chevron-circle-down</v-icon>
         </v-chip>
-        <v-chip class="ma-2" color="grey darken-1" pill href="/list">Reports
+        <v-chip class="ma-2" color="grey darken-1" pill>Reports
             <v-icon right small color="cyan">fas fa-chevron-circle-down</v-icon>
         </v-chip>
         <v-chip class="ma-2" color="grey darken-1" pill>Orders
